@@ -2,48 +2,99 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cartoon Student Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Profile</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
 </head>
-<body>
-
+<body class="crt">
   <div class="profile-container">
-    <div class="decor">🌟📚✨</div>
-    <h1>My Student Profile</h1>
+    <header>
+      <h1>Isaac Ugalino Portfolio</h1>
+      <p class="subtitle">Senior at Burton High School</p>
+    </header>
 
-    <div class="profile-section">
-      <label for="name">Full Namesssss</label>
-      <input type="text" id="name" placeholder="Isaac Ugalino" />
+    <label for="class-nav">Jump to Class:</label>
+    <select id="class-nav" onchange="location.href=this.value">
+      <option value="#">-- Select a Class --</option>
+      <option value="#computer-science">Computer Science</option>
+      <option value="#calculus">Calculus</option>
+      <option value="#government-economy">Government / Economy</option>
+      <option value="#astronomy">Astronomy</option>
+      <option value="#euro-literature">European Literature</option>
+      <option value="#health-science">Health Science</option>
+      <option value="#slides">Capstone Slides</option>
+    </select>
+
+    <!-- Profile Photo Section -->
+    <div class="profile-photo">
+      <img src="images/profile-photo.png" alt="Profile Photo">
     </div>
 
-    <div class="profile-section">
-      <label for="grade">Grade Level</label>
-      <input type="text" id="grade" placeholder="e.g. 12" />
-    </div>
+    <section id="about-me">
+      <h2>About Me</h2>
+      <div class="interest-collage">
+        <img src="images/about-me-images.png" alt="Interests Collage" class="class-img">
+      </div>
+      <p>
+        I am an 18 year old senior at Burton High School. I grew up and lived my whole life in San Francisco. 
+        My parents come from a Pinoy background and I am the second generation in my family. I am an amateur 
+        badminton player, avid video game player, and music enjoyer. I love eating good food, cooking, and 
+        watching sports. After High School I plan to go to the military and see where life takes me from there...
+      </p>
+    </section>
 
-    <div class="profile-section">
-      <label for="bio">About Me</label>
-      <textarea id="bio" placeholder="A few fun facts about you..."></textarea>
-    </div>
+    <!-- Class Sections -->
+    <section id="computer-science">
+      <h2>Computer Science</h2>
+      <img src="images/comp_sci.png" alt="Computer Science" class="class-img">
+      <p>This course introduces programming, logic, and problem-solving. You'll explore how computers work and build projects in languages like Python or JavaScript.</p>
+    </section>
 
-    <div class="profile-section subject-select">
-      <label for="subject">Favorite Class</label>
-      <select id="subject">
-        <option value="cs">Computer Science</option>
-        <option value="calculus">Calculus</option>
-        <option value="goveco">Government/Economy</option>
-        <option value="astronomy">Astronomy</option>
-        <option value="euro-lit">European Literature</option>
-        <option value="health-sci">Health Science</option>
-      </select>
-    </div>
+    <section id="calculus">
+      <h2>Calculus</h2>
+      <img src="images/calc.png" alt="Calculus" class="class-img">
+      <p>Calculus teaches you how to analyze change and motion. Topics include limits, derivatives, integrals, and their real-world applications.</p>
+    </section>
 
-    <div class="footer">
-      &copy; 2025 Cartoon Profile Builder
-    </div>
+    <section id="government-economy">
+      <h2>Government / Economy</h2>
+      <img src="images/gov.png" alt="Government and Economy" class="class-img">
+      <p>This course explores American democracy and economic systems. You'll learn how government functions and how money and markets operate.</p>
+    </section>
+
+    <section id="astronomy">
+      <h2>Astronomy</h2>
+      <img src="images/astronomy.png" alt="Astronomy" class="class-img">
+      <p>Discover the universe! You'll study planets, stars, galaxies, and cosmic phenomena through observations and scientific theory.</p>
+    </section>
+
+    <section id="european-literature">
+      <h2>European Literature</h2>
+      <img src="images/lit.png" alt="European Literature" class="class-img">
+      <p>This class dives into classic and modern European texts. You'll explore authors like Shakespeare, Dante, and Kafka through reading and analysis.</p>
+    </section>
+
+    <section id="health-science">
+      <h2>Health Science</h2>
+      <img src="images/hsci.png" alt="Health Science" class="class-img">
+      <p>This course focuses on the human body, medical careers, and healthcare practices. You'll explore anatomy, nutrition, and first aid concepts.</p>
+    </section>
+
+    <section class="slides-section" id="slides">
+        <h2>Capstone Slides</h2>
+        <div class="slides-embed">
+          <iframe 
+            src="https://docs.google.com/presentation/d/1cNI3ur50iZDXUMaNIoOoQeicTM8OTIptlLxlSI9oEYM/embed?start=false&loop=false&delayms=5000" 
+            frameborder="0" 
+            width="720" 
+            height="480" 
+            allowfullscreen>
+          </iframe>
+        </div>
+      </section>
+      <p>© 2025 Isaac Ugalino – All rights reserved.</p>
+    </footer>
   </div>
-
 </body>
 </html>
